@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Home } from './pages';
+import useCollapse from 'react-collapsed';
+
+// function Collapsible() {
+//   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+// return (
+//   <div className="collapsiblii">
+//       <div className="header" {...getToggleProps()}>
+//           {isExpanded ? 'Collapse' : 'Expandd'}
+//       </div>
+//       <div {...getCollapseProps()}>
+//           <div className="content">
+//               Now you can see the hidden content. <br/><br/>
+//               Click again to hide...
+//           </div>
+//       </div>
+//   </div>
+//   );
+// };
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Collapsible></Collapsible> */}
+      <Home></Home>
     </div>
   );
 }
